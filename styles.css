@@ -1,0 +1,567 @@
+body {
+  background-color: white;
+  margin: 0; }
+
+.image {
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  margin: auto;
+  border-radius: 5%;
+  margin: 20px auto 20px auto;
+  z-index: -100; }
+
+#img-heart {
+  background-color: pink; }
+  #img-heart .heart {
+    width: 25%;
+    height: 25%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hotpink;
+    transform: rotate(-45deg);
+    position: absolute; }
+    #img-heart .heart::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: -50%;
+      left: 0;
+      border-radius: 50% 50% 0 0;
+      background-color: hotpink;
+      position: absolute; }
+    #img-heart .heart::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      border-radius: 0 50% 50% 0;
+      position: absolute;
+      background-color: hotpink; }
+
+#img-penguin {
+  background-color: lightblue; }
+  #img-penguin .penguin * {
+    position: absolute; }
+  #img-penguin .penguin .head {
+    background-color: black;
+    width: 47%;
+    height: 45%;
+    left: 26.5%;
+    top: 12%;
+    border-radius: 50% 50% 45% 45%; }
+    #img-penguin .penguin .head .face-left {
+      width: 45%;
+      height: 60%;
+      background-color: white;
+      z-index: 1;
+      left: 10%;
+      top: 20%;
+      border-radius: 90% 70% 60% 60%; }
+      #img-penguin .penguin .head .face-left .eye-left {
+        width: 30%;
+        height: 24%;
+        background-color: black;
+        z-index: 2;
+        border-radius: 50%;
+        top: 40%;
+        left: 40%; }
+        #img-penguin .penguin .head .face-left .eye-left .sparkle-left {
+          width: 35%;
+          height: 35%;
+          background-color: white;
+          z-index: 2;
+          border-radius: 50%;
+          top: 25%;
+          left: 25%; }
+    #img-penguin .penguin .head .face-right {
+      width: 45%;
+      height: 60%;
+      background-color: white;
+      z-index: 1;
+      right: 10%;
+      top: 20%;
+      border-radius: 70% 90% 60% 60%; }
+      #img-penguin .penguin .head .face-right .eye-right {
+        width: 30%;
+        height: 24%;
+        background-color: black;
+        z-index: 2;
+        border-radius: 50%;
+        top: 40%;
+        right: 40%; }
+        #img-penguin .penguin .head .face-right .eye-right .sparkle-right {
+          width: 35%;
+          height: 35%;
+          background-color: white;
+          z-index: 2;
+          border-radius: 50%;
+          top: 25%;
+          left: 25%; }
+    #img-penguin .penguin .head .beak-top {
+      width: 18%;
+      height: 10%;
+      background-color: orange;
+      top: 60.5%;
+      left: 41%;
+      z-index: 20;
+      border-radius: 60% 60% 50% 50%; }
+    #img-penguin .penguin .head .beak-bottom {
+      width: 14%;
+      height: 8%;
+      background-color: orange;
+      top: 66%;
+      left: 43%;
+      z-index: 20;
+      border-radius: 50% 50% 60% 60%; }
+    #img-penguin .penguin .head .cheek-left {
+      width: 12%;
+      height: 7%;
+      background-color: pink;
+      top: 63%;
+      left: 22%;
+      z-index: 20;
+      border-radius: 50%; }
+    #img-penguin .penguin .head .cheek-right {
+      width: 12%;
+      height: 7%;
+      background-color: pink;
+      top: 63%;
+      right: 22%;
+      z-index: 20;
+      border-radius: 50%; }
+  #img-penguin .penguin .body {
+    background-color: black;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 35%;
+    border-radius: 50% 50% 45% 45%; }
+    #img-penguin .penguin .body .hand-left {
+      width: 30%;
+      height: 50%;
+      background-color: black;
+      left: -6%;
+      top: 20%;
+      z-index: -1;
+      border-radius: 30% 30% 120% 30%;
+      transform: rotate(40deg); }
+    #img-penguin .penguin .body .hand-right {
+      width: 30%;
+      height: 50%;
+      background-color: black;
+      right: -6%;
+      top: 20%;
+      z-index: -1;
+      border-radius: 30% 30% 30% 120%;
+      transform: rotate(-40deg); }
+    #img-penguin .penguin .body .foot-left {
+      background-color: orange;
+      width: 26%;
+      height: 16%;
+      left: 18%;
+      top: 92%;
+      z-index: -1;
+      border-radius: 50% 50% 45% 45%;
+      transform: rotate(-8deg); }
+    #img-penguin .penguin .body .foot-right {
+      background-color: orange;
+      width: 26%;
+      height: 16%;
+      right: 18%;
+      top: 92%;
+      z-index: -1;
+      border-radius: 50% 50% 45% 45%;
+      transform: rotate(8deg); }
+    #img-penguin .penguin .body .tummy {
+      z-index: 10;
+      width: 80%;
+      height: 80%;
+      background-color: white;
+      top: 10%;
+      left: 10%;
+      border-radius: 50% 50% 45% 45%; }
+
+#img-sunflower {
+  background-color: lightsalmon; }
+  #img-sunflower .sunflower {
+    height: 100%;
+    width: 100%; }
+    #img-sunflower .sunflower * {
+      position: absolute; }
+    #img-sunflower .sunflower .center {
+      border-radius: 50%;
+      width: 30%;
+      height: 30%;
+      background-color: #c36522;
+      top: 25%;
+      left: 35%; }
+      #img-sunflower .sunflower .center .center2 {
+        width: 80%;
+        height: 80%;
+        background-color: saddlebrown;
+        border-radius: 50%;
+        top: 10%;
+        left: 10%; }
+      #img-sunflower .sunflower .center .petal1 {
+        height: 75%;
+        width: 75%;
+        background-color: gold;
+        border-radius: 120% 0 120% 0;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: -1;
+        transform: rotate(30deg) translateY(-70%) rotate(-45deg); }
+      #img-sunflower .sunflower .center .petal2 {
+        height: 75%;
+        width: 75%;
+        background-color: gold;
+        border-radius: 120% 0 120% 0;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: -1;
+        transform: rotate(60deg) translateY(-70%) rotate(-45deg); }
+      #img-sunflower .sunflower .center .petal3 {
+        height: 75%;
+        width: 75%;
+        background-color: gold;
+        border-radius: 120% 0 120% 0;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: -1;
+        transform: rotate(90deg) translateY(-70%) rotate(-45deg); }
+      #img-sunflower .sunflower .center .petal4 {
+        height: 75%;
+        width: 75%;
+        background-color: gold;
+        border-radius: 120% 0 120% 0;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: -1;
+        transform: rotate(120deg) translateY(-70%) rotate(-45deg); }
+      #img-sunflower .sunflower .center .petal5 {
+        height: 75%;
+        width: 75%;
+        background-color: gold;
+        border-radius: 120% 0 120% 0;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: -1;
+        transform: rotate(150deg) translateY(-70%) rotate(-45deg); }
+      #img-sunflower .sunflower .center .petal6 {
+        height: 75%;
+        width: 75%;
+        background-color: gold;
+        border-radius: 120% 0 120% 0;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: -1;
+        transform: rotate(180deg) translateY(-70%) rotate(-45deg); }
+      #img-sunflower .sunflower .center .petal7 {
+        height: 75%;
+        width: 75%;
+        background-color: gold;
+        border-radius: 120% 0 120% 0;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: -1;
+        transform: rotate(210deg) translateY(-70%) rotate(-45deg); }
+      #img-sunflower .sunflower .center .petal8 {
+        height: 75%;
+        width: 75%;
+        background-color: gold;
+        border-radius: 120% 0 120% 0;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: -1;
+        transform: rotate(240deg) translateY(-70%) rotate(-45deg); }
+      #img-sunflower .sunflower .center .petal9 {
+        height: 75%;
+        width: 75%;
+        background-color: gold;
+        border-radius: 120% 0 120% 0;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: -1;
+        transform: rotate(270deg) translateY(-70%) rotate(-45deg); }
+      #img-sunflower .sunflower .center .petal10 {
+        height: 75%;
+        width: 75%;
+        background-color: gold;
+        border-radius: 120% 0 120% 0;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: -1;
+        transform: rotate(300deg) translateY(-70%) rotate(-45deg); }
+      #img-sunflower .sunflower .center .petal11 {
+        height: 75%;
+        width: 75%;
+        background-color: gold;
+        border-radius: 120% 0 120% 0;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: -1;
+        transform: rotate(330deg) translateY(-70%) rotate(-45deg); }
+      #img-sunflower .sunflower .center .petal12 {
+        height: 75%;
+        width: 75%;
+        background-color: gold;
+        border-radius: 120% 0 120% 0;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: -1;
+        transform: rotate(360deg) translateY(-70%) rotate(-45deg); }
+    #img-sunflower .sunflower .stalk {
+      width: 6.5%;
+      height: 40%;
+      background-color: green;
+      top: 52%;
+      left: 47%;
+      z-index: -2;
+      border-radius: 1000px; }
+      #img-sunflower .sunflower .stalk .leaf1 {
+        width: 266%;
+        height: 44%;
+        background-color: green;
+        top: 42%;
+        left: 90%;
+        border-radius: 90% 0 90% 0;
+        transform: rotate(25deg);
+        z-index: -5; }
+      #img-sunflower .sunflower .stalk .leaf2 {
+        width: 266%;
+        height: 44%;
+        background-color: green;
+        top: 42%;
+        right: 90%;
+        border-radius: 90% 0 90% 0;
+        transform: rotate(-113deg);
+        z-index: -5; }
+
+#img-tiger {
+  background-color: gainsboro; }
+  #img-tiger .tiger * {
+    position: absolute; }
+  #img-tiger .tiger .ear-inner {
+    border-radius: 1000px 1000px 0 0;
+    width: 55%;
+    height: 17%;
+    top: 14%;
+    left: 22.5%;
+    background-color: pink; }
+  #img-tiger .tiger .ear-left {
+    width: 25%;
+    height: 40%;
+    background-color: orange;
+    border-radius: 1000px;
+    top: 8%;
+    left: 20%;
+    transform: rotate(-40deg);
+    z-index: -10; }
+  #img-tiger .tiger .ear-right {
+    width: 25%;
+    height: 40%;
+    background-color: orange;
+    border-radius: 1000px;
+    top: 8%;
+    right: 20%;
+    transform: rotate(40deg);
+    z-index: -10; }
+  #img-tiger .tiger .head {
+    overflow: hidden;
+    width: 70%;
+    height: 70%;
+    background-color: orange;
+    border-radius: 50%;
+    top: 15%;
+    left: 15%;
+    z-index: -10; }
+    #img-tiger .tiger .head .eye-left {
+      width: 25%;
+      height: 40%;
+      background-color: white;
+      border-radius: 50%;
+      left: 27.5%;
+      top: 30%; }
+      #img-tiger .tiger .head .eye-left .pupil-left {
+        width: 50%;
+        height: 50%;
+        background-color: black;
+        border-radius: 50%;
+        top: 25%;
+        left: 25%; }
+    #img-tiger .tiger .head .eye-right {
+      width: 25%;
+      height: 40%;
+      background-color: white;
+      border-radius: 50%;
+      right: 27.5%;
+      top: 30%; }
+      #img-tiger .tiger .head .eye-right .pupil-right {
+        width: 50%;
+        height: 50%;
+        background-color: black;
+        border-radius: 50%;
+        top: 25%;
+        left: 25%; }
+    #img-tiger .tiger .head .nose {
+      width: 0;
+      height: 0;
+      border-left: 18.46154px solid transparent;
+      border-right: 18.46154px solid transparent;
+      border-top: 23.07692px solid pink;
+      top: 73.5%;
+      left: 41.5%; }
+      #img-tiger .tiger .head .nose .mouth-left {
+        width: 34.61538px;
+        height: 27.69231px;
+        border-radius: 50%;
+        background-color: transparent;
+        box-shadow: 0 2.30769px black;
+        top: -21.92308px;
+        right: -1.61538px;
+        z-index: -1; }
+        #img-tiger .tiger .head .nose .mouth-left .tooth-left {
+          width: 0;
+          height: 0;
+          border-left: 4.15385px solid transparent;
+          border-right: 4.15385px solid transparent;
+          border-top: 6.92308px solid white;
+          left: 12.69231px;
+          top: 30px;
+          z-index: -1; }
+      #img-tiger .tiger .head .nose .mouth-right {
+        width: 34.61538px;
+        height: 27.69231px;
+        border-radius: 50%;
+        background-color: transparent;
+        box-shadow: 0 2.30769px black;
+        top: -21.92308px;
+        left: -1.38462px;
+        z-index: -1; }
+        #img-tiger .tiger .head .nose .mouth-right .tooth-right {
+          width: 0;
+          height: 0;
+          border-left: 4.15385px solid transparent;
+          border-right: 4.15385px solid transparent;
+          border-top: 6.92308px solid white;
+          right: 12.69231px;
+          top: 30px;
+          z-index: -100; }
+    #img-tiger .tiger .head .stripe-main {
+      width: 15%;
+      height: 22.5%;
+      background-color: black;
+      left: 42.5%; }
+      #img-tiger .tiger .head .stripe-main .stripe-main-point1 {
+        width: 0;
+        height: 0;
+        border-left: 37.5px solid transparent;
+        border-right: 37.5px solid transparent;
+        border-top: 30px solid black;
+        top: 75%;
+        left: -69%; }
+      #img-tiger .tiger .head .stripe-main .stripe-main-point2 {
+        width: 0;
+        height: 0;
+        border-left: 37.5px solid transparent;
+        border-right: 37.5px solid transparent;
+        border-top: 30px solid black;
+        top: 40%;
+        left: -69%; }
+    #img-tiger .tiger .head .stripe1-left {
+      width: 60%;
+      height: 60%;
+      background-color: transparent;
+      border-radius: 50%;
+      box-shadow: 0 37.5px black;
+      transform: rotate(91deg);
+      top: -10%;
+      left: 0%; }
+    #img-tiger .tiger .head .stripe2-left {
+      width: 60%;
+      height: 60%;
+      background-color: transparent;
+      border-radius: 50%;
+      box-shadow: 0 37.5px black;
+      transform: rotate(49deg);
+      top: 5%;
+      left: -20%; }
+    #img-tiger .tiger .head .stripe1-right {
+      width: 60%;
+      height: 60%;
+      background-color: transparent;
+      border-radius: 50%;
+      box-shadow: 0 37.5px black;
+      transform: rotate(-91deg);
+      top: -10%;
+      right: 0%; }
+    #img-tiger .tiger .head .stripe2-right {
+      width: 60%;
+      height: 60%;
+      background-color: transparent;
+      border-radius: 50%;
+      box-shadow: 0 37.5px black;
+      transform: rotate(-49deg);
+      top: 5%;
+      right: -20%; }
+    #img-tiger .tiger .head .stripe3-left {
+      width: 60%;
+      height: 60%;
+      background-color: transparent;
+      border-radius: 50%;
+      box-shadow: 0 37.5px black;
+      transform: rotate(45deg);
+      top: 25%;
+      left: -20%; }
+    #img-tiger .tiger .head .stripe3-right {
+      width: 60%;
+      height: 60%;
+      background-color: transparent;
+      border-radius: 50%;
+      box-shadow: 0 37.5px black;
+      transform: rotate(-45deg);
+      top: 25%;
+      right: -20%; }
+
+/* facebook icon:
+ .nose {
+      background: red;
+      text-indent: -999em;
+      width: 100px;
+      height: 110px;
+      box-sizing: content-box;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+      border: 15px solid red;
+      border-bottom: 0;
+    }
+    .nose:before {
+      content: "/20";
+      position: absolute;
+      background: red;
+      width: 40px;
+      height: 90px;
+      bottom: -30px;
+      right: -37px;
+      border: 20px solid #eee;
+      border-radius: 25px;
+      box-sizing: content-box;
+    }
+    .nose:after {
+      content: "/20";
+      position: absolute;
+      width: 55px;
+      top: 50px;
+      height: 20px;
+      background: #eee;
+      right: 5px;
+      box-sizing: content-box;
+    }*/
